@@ -1,0 +1,14 @@
+/* common style and utilites and font*/
+body{
+    background-color: aliceblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 900px;
+    padding: 20px;
+    margin: 10px 20px;
+}
