@@ -132,9 +132,8 @@ body{
     display: none;
 }
 /* footer area */
-.footer-container{
+footer{
     background-color: black; 
-    width: 100%; 
     margin-bottom: 0;
 }
 

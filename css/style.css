@@ -145,12 +145,10 @@ body{
     display: none;
 }
 /* footer area */
-.footer-container{
-    background-color: black; 
-    width: 100%; 
+footer{
+    background-color: black;
     margin-bottom: 0;
 }
-
 .footer-title{
     margin-top: 40px;
     padding-top: 50px;
