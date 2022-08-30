@@ -82,7 +82,7 @@ body{
     align-items: center;
     background-color: black;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 13px;
 }
 .btn-container div{
     margin: 10px;
@@ -139,6 +139,9 @@ body{
 }
 .chats{
     margin-left: 20px;
+}
+.hide-btn{
+    display: none;
 }
 /* footer area */
 .footer-container{
@@ -199,18 +202,29 @@ body{
         font-weight: normal;
     }
     /* ------------------ */
+    main{
+        margin-bottom: 30px;
+    }
     .button-player{
         margin-top: 10px;
     }
     .btn-container{
         background-color: white;
+        width: 100%;
     }
     .players-container{
         display: flex;
         flex-direction: column;
+        align-items: centers;
+        width: 100%;
+    }
+    .player-details p{
+        font-size: 22px;
+        margin: 5px 0;
     }
     /* ------------------ */
     .footer-container{
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -220,9 +234,86 @@ body{
     .footer-items{
         display: flex;
         flex-direction: column;
+        margin-bottom: 0;
     }
     .footer-items a{
-        padding: 25px 0 0 0;
+        padding: 30px 0 0 0;
     }
     
    }
+   /* ___tablet___ */
+   @media only screen and(min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    /* -------------- */
+    .main-header{
+        align-items: center;
+        width: 90%;
+    }
+    .title-detail{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    .title-h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    /* ------------- */
+    .button-player{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .btn-container{
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .players-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        width:98%;
+    }
+    .group-btn{
+        width: 220px;
+        padding: 15px 18px;
+        text-align: center;
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .hide-player{
+        display: none;
+    }
+    .hide-btn{
+        display: block;
+        margin-top: 30px;
+    }
+   /*------------- */
+   .footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .footer-title{
+    text-align: center;
+   }
+   .footer-items {
+    display: flex;
+    align-items: center;
+    margin: 5px 30px;
+    flex-wrap: wrap;
+   }
+}
